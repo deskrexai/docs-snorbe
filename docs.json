@@ -11,20 +11,12 @@
   "seo": {
     "indexing": "all"
   },
-  "i18n": {
-    "languages": [
-      { "locale": "ja", "name": "日本語" },
-      { "locale": "en", "name": "English" }
-    ],
-    "defaultLocale": "ja"
-  },
   "metadata": {
     "title": "Snorbe User Guide - Graph AI Research Platform",
     "description": "Snorbe is a graph AI research platform that visualizes news, papers, patents, and government reports as a knowledge graph, auto-detects white spaces, and generates viewpoint matrices in 30 seconds and structured reports in 10 minutes.",
     "keywords": "Snorbe, AI, knowledge graph, research, white space detection, manufacturing, R&D, new business development",
     "author": "Snorbe",
     "robots": "index, follow",
-    "language": "ja-JP",
     "og:type": "website",
     "og:site_name": "Snorbe User Guide",
     "og:title": "Snorbe - Graph AI Research Platform",
@@ -46,77 +38,105 @@
     "image": "/images/ogp.png"
   },
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": {
-          "ja": "ユーザーガイド",
-          "en": "User Guide"
-        },
-        "groups": [
+        "language": "ja",
+        "tabs": [
           {
-            "group": {
-              "ja": "はじめに",
-              "en": "Getting Started"
-            },
-            "pages": [
-              "index"
+            "tab": "ユーザーガイド",
+            "groups": [
+              {
+                "group": "はじめに",
+                "pages": ["ja/index"]
+              }
+            ]
+          },
+          {
+            "tab": "リリースノート",
+            "groups": [
+              {
+                "group": "リリースノート",
+                "pages": ["ja/release-notes/index"]
+              }
+            ]
+          },
+          {
+            "tab": "コーポレートニュース",
+            "groups": [
+              {
+                "group": "コーポレートニュース",
+                "pages": [
+                  "ja/corporate-news/index",
+                  "ja/corporate-news/2025",
+                  "ja/corporate-news/2024"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "リーガル",
+            "groups": [
+              {
+                "group": "リーガル",
+                "pages": [
+                  "ja/legal/index",
+                  "ja/legal/privacy-policy",
+                  "ja/legal/terms-of-service",
+                  "ja/legal/sla",
+                  "ja/legal/commercial-transactions"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": {
-          "ja": "リリースノート",
-          "en": "Release Notes"
-        },
-        "groups": [
+        "language": "en",
+        "tabs": [
           {
-            "group": {
-              "ja": "リリースノート",
-              "en": "Release Notes"
-            },
-            "pages": [
-              "release-notes/index"
+            "tab": "User Guide",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "pages": ["en/index"]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "tab": {
-          "ja": "コーポレートニュース",
-          "en": "Corporate News"
-        },
-        "groups": [
+          },
           {
-            "group": {
-              "ja": "コーポレートニュース",
-              "en": "Corporate News"
-            },
-            "pages": [
-              "corporate-news/index",
-              "corporate-news/2025",
-              "corporate-news/2024"
+            "tab": "Release Notes",
+            "groups": [
+              {
+                "group": "Release Notes",
+                "pages": ["en/release-notes/index"]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "tab": {
-          "ja": "リーガル",
-          "en": "Legal"
-        },
-        "groups": [
+          },
           {
-            "group": {
-              "ja": "リーガル",
-              "en": "Legal"
-            },
-            "pages": [
-              "legal/index",
-              "legal/privacy-policy",
-              "legal/terms-of-service",
-              "legal/sla",
-              "legal/commercial-transactions"
+            "tab": "Corporate News",
+            "groups": [
+              {
+                "group": "Corporate News",
+                "pages": [
+                  "en/corporate-news/index",
+                  "en/corporate-news/2025",
+                  "en/corporate-news/2024"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Legal",
+            "groups": [
+              {
+                "group": "Legal",
+                "pages": [
+                  "en/legal/index",
+                  "en/legal/privacy-policy",
+                  "en/legal/terms-of-service",
+                  "en/legal/sla",
+                  "en/legal/commercial-transactions"
+                ]
+              }
             ]
           }
         ]
@@ -125,34 +145,22 @@
     "global": {
       "anchors": [
         {
-          "anchor": {
-            "ja": "Snorbe アプリ",
-            "en": "Snorbe App"
-          },
+          "anchor": "Snorbe App",
           "href": "https://app.snorbe.com",
           "icon": "browser"
         },
         {
-          "anchor": {
-            "ja": "サービスサイト",
-            "en": "Service Site"
-          },
+          "anchor": "Service Site",
           "href": "https://lp.snorbe.com",
           "icon": "house"
         },
         {
-          "anchor": {
-            "ja": "コーポレートサイト",
-            "en": "Corporate Site"
-          },
+          "anchor": "Corporate Site",
           "href": "https://deskrex.ai",
           "icon": "building"
         },
         {
-          "anchor": {
-            "ja": "お問い合わせ",
-            "en": "Contact"
-          },
+          "anchor": "Contact",
           "href": "https://lp.snorbe.com/contact",
           "icon": "envelope"
         }
@@ -166,19 +174,13 @@
   "navbar": {
     "links": [
       {
-        "label": {
-          "ja": "お問い合わせ",
-          "en": "Contact"
-        },
+        "label": "Contact",
         "href": "https://lp.snorbe.com/contact"
       }
     ],
     "primary": {
       "type": "button",
-      "label": {
-        "ja": "クローズドアルファに申し込む",
-        "en": "Join Closed Alpha"
-      },
+      "label": "Join Closed Alpha",
       "href": "https://lp.snorbe.com/contact"
     }
   },
