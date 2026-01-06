@@ -1,68 +1,122 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Snorbe User Guide",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#323333",
+    "light": "#656769",
+    "dark": "#101112"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/images/favicon.ico",
+  "seo": {
+    "indexing": "all"
+  },
+  "i18n": {
+    "languages": [
+      { "locale": "ja", "name": "日本語" },
+      { "locale": "en", "name": "English" }
+    ],
+    "defaultLocale": "ja"
+  },
+  "metadata": {
+    "title": "Snorbe User Guide - Graph AI Research Platform",
+    "description": "Snorbe is a graph AI research platform that visualizes news, papers, patents, and government reports as a knowledge graph, auto-detects white spaces, and generates viewpoint matrices in 30 seconds and structured reports in 10 minutes.",
+    "keywords": "Snorbe, AI, knowledge graph, research, white space detection, manufacturing, R&D, new business development",
+    "author": "Snorbe",
+    "robots": "index, follow",
+    "language": "ja-JP",
+    "og:type": "website",
+    "og:site_name": "Snorbe User Guide",
+    "og:title": "Snorbe - Graph AI Research Platform",
+    "og:description": "Visualize R&D and new business insights with graph AI. Auto-detect white spaces and generate structured reports in minutes.",
+    "og:url": "https://docs.snorbe.com",
+    "og:image": "/images/ogp.png",
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:image:alt": "Snorbe - Graph AI Research Platform",
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@snorbe",
+    "twitter:creator": "@snorbe",
+    "twitter:title": "Snorbe - Graph AI Research Platform",
+    "twitter:description": "Graph AI platform for R&D and new business development. Auto-detect white spaces and generate reports.",
+    "twitter:image": "/images/ogp.png",
+    "twitter:image:alt": "Snorbe - Graph AI Research Platform"
+  },
+  "openGraph": {
+    "image": "/images/ogp.png"
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": {
+          "ja": "ユーザーガイド",
+          "en": "User Guide"
+        },
         "groups": [
           {
-            "group": "Getting started",
+            "group": {
+              "ja": "はじめに",
+              "en": "Getting Started"
+            },
             "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "index"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": {
+          "ja": "リリースノート",
+          "en": "Release Notes"
+        },
         "groups": [
           {
-            "group": "API documentation",
+            "group": {
+              "ja": "リリースノート",
+              "en": "Release Notes"
+            },
             "pages": [
-              "api-reference/introduction"
+              "release-notes/index"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": {
+          "ja": "コーポレートニュース",
+          "en": "Corporate News"
+        },
+        "groups": [
           {
-            "group": "Endpoint examples",
+            "group": {
+              "ja": "コーポレートニュース",
+              "en": "Corporate News"
+            },
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "corporate-news/index",
+              "corporate-news/2025",
+              "corporate-news/2024"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": {
+          "ja": "リーガル",
+          "en": "Legal"
+        },
+        "groups": [
+          {
+            "group": {
+              "ja": "リーガル",
+              "en": "Legal"
+            },
+            "pages": [
+              "legal/index",
+              "legal/privacy-policy",
+              "legal/terms-of-service",
+              "legal/sla",
+              "legal/commercial-transactions"
             ]
           }
         ]
@@ -71,52 +125,71 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": {
+            "ja": "Snorbe アプリ",
+            "en": "Snorbe App"
+          },
+          "href": "https://app.snorbe.com",
+          "icon": "browser"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": {
+            "ja": "サービスサイト",
+            "en": "Service Site"
+          },
+          "href": "https://lp.snorbe.com",
+          "icon": "house"
+        },
+        {
+          "anchor": {
+            "ja": "コーポレートサイト",
+            "en": "Corporate Site"
+          },
+          "href": "https://deskrex.ai",
+          "icon": "building"
+        },
+        {
+          "anchor": {
+            "ja": "お問い合わせ",
+            "en": "Contact"
+          },
+          "href": "https://lp.snorbe.com/contact",
+          "icon": "envelope"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/logo/snorbe_text_logo.svg",
+    "dark": "/images/logo/snorbe_text_logo.svg"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": {
+          "ja": "お問い合わせ",
+          "en": "Contact"
+        },
+        "href": "https://lp.snorbe.com/contact"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": {
+        "ja": "クローズドアルファに申し込む",
+        "en": "Join Closed Alpha"
+      },
+      "href": "https://lp.snorbe.com/contact"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/snorbe",
+      "github": "https://github.com/deskrex",
+      "linkedin": "https://linkedin.com/company/deskrex"
     }
+  },
+  "sitemap": {
+    "excludeHiddenPages": true
   }
 }
